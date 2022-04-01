@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Basics</title>
+  <style>
+    /* Small Reset */
+    *::before, *::after, * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding: 5rem;
+    }
+    .square {
+      width: 200px;
+      height: 200px;
+      background: orange;
+    }
+
+    .in, .out {
+      width: 200px;
+      background: grey;
+      padding: 0.35rem;
+    }
+
+    .out {
+      background: greenyellow;
+    }
+
+  </style>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- 1. Link jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 2. Own Code -->
+  <script src="code.js"></script>
+</head>
+<body>
+  
+  <div class="square">
+
+  </div>
+  <div class="in">Your mouse is in the square</div>
+  <div class="out">Your mouse is outside the square</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right,purple, hotpink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+section.contact {
+  background-color: white;
+  padding: 4rem 6rem;
+}
+section.contact form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.hidden-label {
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+form button {
+  color: white;
+  background: black;
+  display: block;
+  max-width: 50%;
+  padding: 1rem 1.4rem;
+  border-radius: 3rem;
+  border: none;
+  align-self: center;
+}
+
+form label , form button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+form .name {
+  margin-top: -2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .name div:nth-child(1){
+  margin-right: 0.5rem;
+}
+form .name div:nth-child(2){
+  margin-left: 0.5rem;
+}
+
+
+form input, form textarea {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: solid 1px rgb(205, 205, 205);
+  font-family: sans-serif;
+}
+
+form button:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+form .input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  font-size: 0.6rem;
+  color: red;
+  margin-top: 5px;
+}

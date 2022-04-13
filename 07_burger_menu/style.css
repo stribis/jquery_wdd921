@@ -162,8 +162,12 @@ h2{
   }
 
   .dropdown-nav {
-    display: block;
+    display: none;
   }
+
+  /* .dropdown-nav.open {
+    display: block;
+  } */
 
   .main-nav {
     display: none;

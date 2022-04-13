@@ -48,11 +48,22 @@ $('.contact form').on('submit', function (e) {
     error_messages.message = 'You forgot to write a message 😅' 
   }
 
-
   // Generate error messages
   if (!$.isEmptyObject(error_messages)){
     if ( error_messages.firstName ) {
       $('#first-name').after(`<span class="error-message">${error_messages.firstName}</span>`)
+    }
+    if ( error_messages.lastName ) {
+      $('#last-name').after(`<span class="error-message">${error_messages.lastName}</span>`)
+    }
+    if ( error_messages.email ) {
+      $('#email').after(`<span class="error-message">${error_messages.email}</span>`)
+    }
+    if ( error_messages.phone ) {
+      $('#phone').after(`<span class="error-message">${error_messages.phone}</span>`)
+    }
+    if ( error_messages.message ) {
+      $('#message').after(`<span class="error-message">${error_messages.message}</span>`)
     }
     
   } else { // Handle sending data to server

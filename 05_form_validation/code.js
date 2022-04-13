@@ -45,7 +45,7 @@ $('.contact form').on('submit', function (e) {
 
   // Validation for Message
   if ( input_values.message.length <= 0 ) {
-    error_messages.message = 'You forgot to write a message 😅'
+    error_messages.message = 'You forgot to write a message 😅' 
   }
 
 

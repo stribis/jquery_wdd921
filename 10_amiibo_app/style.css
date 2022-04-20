@@ -1,0 +1,25 @@
+
+
+.amiibo-container img {
+  height: 100%;
+  width: auto;
+}
+
+.img-container {
+  height: 200px;
+}
+
+.release {
+  position: relative;
+}
+
+.release span {
+  position: absolute;
+  left: 0;
+  bottom: 102%;
+  display: none;
+}
+
+.release:hover span {
+  display: block;
+}

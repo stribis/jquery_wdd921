@@ -1,0 +1,55 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  color: #fff;
+  font-family: sans-serif;  
+}
+
+header {
+  margin: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+main form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  margin: 3rem 8rem;
+}
+
+.todo-item {
+  border: solid 1px white;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+input, button {
+  padding: 0.5rem 0.6rem;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  
+}
+
+button {
+  border: solid 1px white;
+  background: transparent;
+  color: white;
+}
+
+.delete {
+  cursor: pointer;
+}

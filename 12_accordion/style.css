@@ -1,0 +1,72 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, hotpink, purple);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Accordion */
+
+.container {
+  box-shadow: 2px 2px 8px #222;
+  border-radius: 1rem;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  padding: 3rem;
+
+}
+
+
+.left-panel h2 {
+  font-size: 2rem;
+}
+
+.item {
+  border: solid 1px #ccc;
+  padding: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-text {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.info-text {
+  margin-top: 1rem;
+}
+
+.item-info {
+  display: none;
+}
+
+.fas {
+  border-radius: 50%;
+  background: rgb(236,236,236);
+  color: rgb(255, 143, 199);
+  width: 35px;
+  height: 35px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
